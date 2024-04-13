@@ -9,10 +9,10 @@ import (
 )
 
 var Analyzer = &analysis.Analyzer{
-	Name: "noliteral",
-	Doc: "noliteral finds calls to x.Exec with string literal arg",
-	Run: run,
-	Requires: []*analysis.Analyzer{ inspect.Analyzer },
+	Name:     "noliteral",
+	Doc:      "noliteral finds calls to x.Exec with string literal arg",
+	Run:      run,
+	Requires: []*analysis.Analyzer{inspect.Analyzer},
 }
 
 func run(pass *analysis.Pass) (interface{}, error) {
@@ -25,7 +25,7 @@ func run(pass *analysis.Pass) (interface{}, error) {
 			if isGetConst(n) {
 				if isStringLiteral(n.Args[0]) {
 					l := n.Args[0].(*ast.BasicLit).Value
-					l = l[1:len(l)-1]
+					l = l[1 : len(l)-1]
 					pass.Reportf(n.Args[0].Pos(), "Use x.%s instead of string literal", l)
 				}
 			}
