@@ -7,6 +7,6 @@ import (
 
 func main() {
 	multichecker.Main(
-		upperid.UpperIDAnalyzer,
+		upperid.Analyzer,
 	)
 }

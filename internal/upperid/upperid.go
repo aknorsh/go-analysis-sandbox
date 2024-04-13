@@ -8,7 +8,7 @@ import (
 	"golang.org/x/tools/go/ast/inspector"
 )
 
-var UpperIDAnalyzer = &analysis.Analyzer{
+var Analyzer = &analysis.Analyzer{
 	Name: "UpperID",
 	Doc: "UpperID finds identifiers which name are Id",
 	Run: run,
