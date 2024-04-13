@@ -10,8 +10,8 @@ import (
 
 var Analyzer = &analysis.Analyzer{
 	Name: "UpperID",
-	Doc: "UpperID finds identifiers which name are Id",
-	Run: run,
+	Doc:  "UpperID finds identifiers which name are Id",
+	Run:  run,
 	Requires: []*analysis.Analyzer{
 		inspect.Analyzer,
 	},

@@ -1,4 +1,4 @@
-package upperid
+package noliteral
 
 import (
 	"testing"

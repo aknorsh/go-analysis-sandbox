@@ -13,3 +13,7 @@ TODO。analysis.Analyzer 提供してたらそれを main.go に差す？
   - hoge_test.go <- テスト書く。テンプレ固定。
   - testdata/src/a/a.go <- テストで使うやつを書く。実質テスト定義箇所はこっち。テンプレ化できなくもない
 - cmd/mylint/main.go に hoge.Analyzer 追加
+
+## Tips
+
+[GoAst Viewer](https://yuroyoro.github.io/goast-viewer/index.html)
